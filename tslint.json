@@ -1,0 +1,173 @@
+{
+  "rules": {
+    "arrow-return-shorthand": true,
+    "align": [ // 定义对齐风格
+      true,
+      "parameters", // 函数参数
+      "arguments", // 函数调用参数
+      "statements",
+      "members",
+      "elements"
+    ],
+    // "await-promise": true, // 不允许没有Promise的情况下使用await
+    "array-type": [true,"array"], // 建议使用T[]方式声明一个数组对象
+    "ban-types": [
+      true, 
+      ["Object", "Use {} instead."],
+      ["Array", "Use [] instead."],
+      ["String"]
+    ],
+    "callable-types": true,
+    "class-name": true, // 类名以大驼峰格式命名
+    "comment-format": [ // 定义注释格式
+      true,
+      "check-space"
+    ],
+    "curly": true, // if/for/do/while强制使用大括号
+    "deprecation": true,
+    "eofline": true, // 文件以空行结尾
+    "encoding": true, // 定义编码格式默认utf-8
+    "forin": true, // 使用for in语句时，强制进行hasOwnProperty检查
+    "import-spacing": true, // import关键字后加空格
+    "indent": [ // 缩进为2个空格符
+      true,
+      "spaces",
+      2
+    ],
+    "interface-name": [true,"always-prefix"], // interface必须以I开头
+    "interface-over-type-literal": true,
+    "label-position": true,
+    "linebreak-style": [true,"CR/LF"], // 换行符格式 CR/LF可以通用使用在windows和osx
+    "jsdoc-format": true, // 注释基于jsdoc风格
+    "max-line-length": [true, 140], // 每行最大长度
+    "max-classes-per-file": false,
+    "member-access": true, // 设置成员对象的访问权限（public,private,protect)
+    "member-ordering": [ // 设置修饰符顺序
+      true,
+      {
+        "order": [ 
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "protected-static-method",
+          "private-static-field",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    // "no-any": true, // 禁止使用 any 作为类型声明
+    "no-arg": true, // 不允许使用arguments.callee
+    "no-bitwise": true, // 不允许使用特殊运算符 &, &=, |, |=, ^, ^=, <<, <<=, >>, >>=, >>>, >>>=, ~
+    "no-conditional-assignment": true, // do while/for/if/while 语句中将会对例如if(a=b)进行检查
+    "no-console": [ // 不允许使用的console对象
+      true,
+      "debug",
+      "info",
+      // "time",
+      // "timeEnd",
+      "trace"
+    ],
+    "no-construct": true,
+    "no-debugger": true, // 不允许使用debugger
+    "no-duplicate-imports": true, // 禁止在一个文件内，多次引用同一module
+    "no-duplicate-super": true, // 不允许super() 两次使用在构造函数中
+    "no-duplicate-variable": true,
+    "no-empty": true, // 函数体不允许空
+    "no-empty-interface": true, // 不允许空接口
+    "no-eval": true, // 不允许使用 eval
+    "no-inferrable-types": [ // 对于初始化为数字，字符串或布尔值的变量或参数，禁止显式类型声明
+      true,
+      "ignore-params"
+    ],
+    "no-internal-module": true, // 不允许使用内部模块
+    "no-invalid-this": true, // 不允许在class之外使用this
+    "no-invalid-template-strings": true, // 只允许在模板字符串中使用${
+    // "no-null-keyword": true, // 不允许使用null,使用undefined代替null，指代空指针对
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-parameter-reassignment": true, // 不允许修改方法输入参数
+    "no-redundant-jsdoc": true,
+    "no-shadowed-variable": true,
+    "no-sparse-arrays": true, // 不允许array中有空元素
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true, // 不允许case段落中在没有使用breack的情况下，在新启一段case逻辑
+    "no-trailing-whitespace": true, // 不允许行尾空格
+    // "no-use-before-declare": true, // 在使用前必须声明
+    "no-unused-expression": true, // 不允许声明未使用的表达式
+    "no-unused-variable": true, // 不允许生命未使用的变量
+    "no-unnecessary-initializer": true, // 不允许没有必要的初始化
+    "no-unsafe-finally": true, // 不允许在finally语句中使用return/continue/break/throw
+    "no-var-keyword": true, // 不允许使用var
+    "no-var-requires": false,
+    // "no-require-imports": true, // 不允许使用 require 倒入模块
+    "object-literal-sort-keys": false,
+    "one-line": [ // 要求指定的标记与它们之前的表达式位于同一行。
+      true,
+      "check-catch",
+      "check-else",
+      "check-finally",
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "prefer-const": true,
+    "prefer-for-of": true, // 如果for循环中没有使用索引，建议是使用for-of
+    "quotemark": [ // 单引号
+      true,
+      "single",
+      "avoid-escape"
+    ],
+    "radix": true, // parseInt时，必须输入radix精度参数
+    "semicolon": [true, "always"], // 分号结尾
+    "triple-equals": [ // 必须使用恒等号，进行等于比较
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [ // 需要或不允许使用空格进行类型定义
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "unified-signatures": true,
+    "use-isnan": true, // 只允许使用 isNaN 方法检查数字是否有效
+    "variable-name": [ // 定义变量命名规则
+      true,
+      "ban-keywords", // 禁止将某些 TypeScript 关键字用作变量或参数名称
+      "check-format",
+      "allow-leading-underscore", // 开头下划线
+      // "allow-trailing-underscore", // 结尾下划线
+      "allow-pascal-case" // 允许使用 PascalCase 以及 lowerCamelCase
+    ],
+    "whitespace": [ // 强制空格转换
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ]
+  },
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier"
+  ]
+}

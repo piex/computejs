@@ -1,0 +1,23 @@
+{
+  "name": "zan-calc",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "jasmine-ts --config=jasmine.json"
+  },
+  "dependencies": {
+    "bignumber.js": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.3.0",
+    "@types/node": "^10.12.12",
+    "ava": "^0.25.0",
+    "jasmine": "^3.3.1",
+    "jasmine-ts": "^0.3.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  }
+}

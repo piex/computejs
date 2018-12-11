@@ -1,0 +1,37 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": false,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "types": [
+      "node",
+      "jasmine"
+    ],
+    "watch": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,    // 开启修饰器元数据
+    "experimentalDecorators": true,   // 开启修饰器
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es2017", "es2015", "es2015.promise"],
+    "mapRoot": "./",
+    "module": "commonjs",
+    // "module": "es2015",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "target": "es6",
+    "removeComments": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  } ,
+  // 不需要监控编译的目录
+  "exclude": [
+      "node_modules",
+      "build"
+  ],
+}
