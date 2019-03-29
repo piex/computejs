@@ -94,7 +94,7 @@
     // "no-null-keyword": true, // 不允许使用null,使用undefined代替null，指代空指针对
     "no-misused-new": true,
     "no-non-null-assertion": true,
-    "no-parameter-reassignment": true, // 不允许修改方法输入参数
+    "no-parameter-reassignment": false, // 不允许修改方法输入参数
     "no-redundant-jsdoc": true,
     "no-shadowed-variable": true,
     "no-sparse-arrays": true, // 不允许array中有空元素
